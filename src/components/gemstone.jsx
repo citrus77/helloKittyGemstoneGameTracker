@@ -1,4 +1,3 @@
-import React from "react";
 import { useLayoutEffect, useState } from "react";
 import "./css/Gemstone.css";
 
@@ -34,7 +33,11 @@ const Gemstone = ({resetState, setIsReset}) => {
     }
   };
 
-  return <button className={resetState === true ? 'grey': gemstoneColor} onClick={changeColor}></button>;
+  return (
+    <>
+      <button className={resetState === true ? 'grey': gemstoneColor} onClick={changeColor}></button>
+    </>
+  );
 };
 
 export default Gemstone;

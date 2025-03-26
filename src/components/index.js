@@ -1,1 +1,1 @@
-export { default as Gemstone } from './Gemstone';
+export { default as Gemstone } from './gemstone';
