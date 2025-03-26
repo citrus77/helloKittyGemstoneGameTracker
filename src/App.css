@@ -15,3 +15,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.resetBtn {
+  background-color: #e90000;
+  border-radius: 8px;
+  color: white;
+  margin: 0.5em;
+}

@@ -1,12 +1,20 @@
 import React from "react";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import "./css/gemstone.css";
 
-const Gemstone = () => {
+const Gemstone = ({resetState, setIsReset}) => {
   const [gemstoneColor, setGemstoneColor] = useState("grey");
+  
+  useLayoutEffect(() => {
+    if (resetState === true) {
+      setGemstoneColor("grey");
+    }
+  }
+  , [resetState]);
 
   const changeColor = () => {
     if (gemstoneColor === "grey") {
+      setIsReset(false);
       setGemstoneColor("light-green");
     }
     if (gemstoneColor === "light-green") {
@@ -26,7 +34,7 @@ const Gemstone = () => {
     }
   };
 
-  return <button className={gemstoneColor} onClick={changeColor}></button>;
+  return <button className={resetState === true ? 'grey': gemstoneColor} onClick={changeColor}></button>;
 };
 
 export default Gemstone;
