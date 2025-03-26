@@ -7,7 +7,29 @@ const App = () => {
   return (
     <>
       <h1>Gemstone Tracker</h1>
-      <Gemstone />
+      <table className = 'gemstone-table'>
+        <thead></thead>
+        <tr>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+        </tr>
+
+        <tr>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+        </tr>
+        
+        <tr>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+          <td><Gemstone /></td>
+        </tr>
+      </table>
     </>
   )
 }

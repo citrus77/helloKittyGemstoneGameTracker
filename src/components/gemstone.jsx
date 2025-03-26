@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./css/Gemstone.css";
+import "./css/gemstone.css";
 
 const Gemstone = () => {
   const [gemstoneColor, setGemstoneColor] = useState("grey");
@@ -21,7 +21,7 @@ const Gemstone = () => {
     if (gemstoneColor === "red") {
       setGemstoneColor("orange");
     }
-    if (gemstoneColor === "purple") {
+    if (gemstoneColor === "orange") {
       setGemstoneColor("grey");
     }
   };
