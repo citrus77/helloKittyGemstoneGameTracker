@@ -1,6 +1,6 @@
 import React from "react";
 import { useLayoutEffect, useState } from "react";
-import "./css/gemstone.css";
+import "./css/Gemstone.css";
 
 const Gemstone = ({resetState, setIsReset}) => {
   const [gemstoneColor, setGemstoneColor] = useState("grey");

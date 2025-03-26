@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
-import Gemstone from "./components/gemstone";
+import Gemstone from "./components/Gemstone";
 
 const App = () => {
   const [isReset, setIsReset] = useState(false);
